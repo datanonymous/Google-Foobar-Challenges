@@ -10,7 +10,6 @@ def answer(total_lambs):
         runningTotal = runningTotal + currentValue
         if runningTotal > total_lambs:
             break
-        #print(doubledList)
         x = x+1
 
     fibList = [1,1]
@@ -22,8 +21,10 @@ def answer(total_lambs):
         fibRunningTotal = fibRunningTotal + int(fibList[y])
         if fibRunningTotal > total_lambs:
             break
-        #print(fibList)
         y = y+1
+
+    print(doubledList)
+    print(fibList)
 
     answer = len(fibList) - len(doubledList)
 
